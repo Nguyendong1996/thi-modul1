@@ -22,16 +22,16 @@
     }
 
   }
-  let myRectangle = new Rectangle(10,10,200,100,);
+  let myRectangle = new Rectangle(10,10,200,100,"#000000");
   let width = myRectangle.width
   let height =myRectangle.height
   let x =myRectangle.x
   let y =myRectangle.y
-
+let color= myRectangle.color
 
   let canvas = document.getElementById("render");
   let ctx = canvas.getContext('2d');
-  ctx.fillStyle='#000000';
+  ctx.fillStyle=color;
   ctx.fillRect(x, y, width, height)
 </script>
 </body>
