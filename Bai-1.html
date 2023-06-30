@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function numBer(arr){
+    let index;
+    let array=[]
+    let max = arr[0]
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (max < arr[j]) {
+                max = arr[j]
+                index=j
+            }
+        }
+        arr.splice(index,1)
+        array.push(max)
+    }
+    let min= array[0]
+    for (let i = 0; i < array.length; i++) {
+        if (array[i]<min){
+            min = array[i]
+        }
+    }
+    alert("điểm thi cao thứ 3 là :"+ min)}
+</script>
+</body>
+</html>

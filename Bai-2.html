@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoveFormArray(array, index) {
+        let brray = []
+        if (array.length >= index) {
+            for (let i = 0; i < array.length; i++) {
+                if (i === index) {
+                    continue;
+                } else {
+                    brray.push(array[i])
+                }
+                return brray
+            }
+        } else {
+            return array;
+        }
+    }
+</script>
+</body>
+</html>
